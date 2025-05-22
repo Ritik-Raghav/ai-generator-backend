@@ -12,7 +12,14 @@ import fileRoutes from './routes/file.js';
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://ai-frontend-sigma.vercel.app/",
+    "http://localhost:8080",
+    "http://localhost:3000",
+    "https://ai-generator-backend-production.up.railway.app/"
+  ]
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
