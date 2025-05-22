@@ -1,0 +1,9 @@
+Prompt:
+hi
+
+Response:
+<think>
+
+</think>
+
+Hello! How can I assist you today? 😊
